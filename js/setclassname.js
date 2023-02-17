@@ -7,6 +7,7 @@ let pbSetClassName = document.getElementById("pbSetStyle")
 function setStyle() {
     const elm = document.querySelector("." + inpElementName.value)
     console.log(elm)
+    elm.classList.add(inpStyleName.value)
 }
 
 pbSetClassName.addEventListener('click', setStyle)
